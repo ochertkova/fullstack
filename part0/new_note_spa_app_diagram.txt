@@ -1,0 +1,13 @@
+note over browser:
+browser executes the event handler
+that renders notes to display and sends the new note to server
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/notes/new_note_spa
+note over server:
+server starts executing js-code over POST request
+and creates a new mote object
+end note
+
+
+server-->browser: HTTP status code 201, content, date
